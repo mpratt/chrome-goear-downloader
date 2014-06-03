@@ -1,0 +1,17 @@
+{
+  "name": "Goear.com Downloader",
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "description": "Adds a download button when playing mp3 files on goear.com",
+  "permissions": [
+    "*://*.goear.com/listen/*"
+  ],
+  "icons": {
+    "48" : "sample-48.png",
+    "128" : "sample-128.png"
+  },
+  "content_scripts": [{
+      "matches": ["*://*.goear.com/listen/*"],
+      "js" : ["download.js"]
+    }]
+}
