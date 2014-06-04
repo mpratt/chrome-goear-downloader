@@ -7,8 +7,8 @@
     "*://*.goear.com/listen/*"
   ],
   "icons": {
-    "48" : "sample-48.png",
-    "128" : "sample-128.png"
+    "48" : "logo-48.png",
+    "128" : "logo-128.png"
   },
   "content_scripts": [{
       "matches": ["*://*.goear.com/listen/*"],
