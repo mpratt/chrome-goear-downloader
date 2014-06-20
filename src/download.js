@@ -48,7 +48,8 @@ function gd_createLink() {
     a.appendChild(document.createTextNode(text));
     a.title = text;
     a.className = "radius_3"
-    a.href = "http://www.goear.com/plimiter.php?f=" + gd_getSongId();
+    //a.href = "http://www.goear.com/plimiter.php?f=" + gd_getSongId();
+    a.href = "http://www.goear.com/action/sound/get/" + gd_getSongId();
     a.setAttribute("style", "background-position:0px -12px;");
 
     return a;
