@@ -1,6 +1,7 @@
 /*
 * Copyright (c) 2014 Michael Pratt <pratt@hablarmierda.net>
 *
+* @url https://github.com/mpratt/chrome-goear-downloader
 * @license MIT
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,10 +24,11 @@
 */
 
 /**
- * Prepends a new list element into a given list
+ * Prepends the download button into the
+ * given list.
  *
  * @param element ul
- * @return string
+ * @return void
  */
 function gd_addElementToList(ul) {
     var list = document.createElement('li');
@@ -37,27 +39,32 @@ function gd_addElementToList(ul) {
 }
 
 /**
- * Creates an anchor (link) element
+ * Creates an anchor (link) element with the
+ * location of the mp3 file
+ *
+ * Other possible urls could be:
+ *     - 'http://www.goear.com/plimiter.php?f=' + gd_getSongId();
+ *     - 'http://www.goear.com/action/sound/get/' + gd_getSongId();
  *
  * @return element
  */
 function gd_createLink() {
     var a = document.createElement('a');
-    var text = "Descargar";
+    var text = chrome.i18n.getMessage('goear_downloader_anchor_text');
 
     a.appendChild(document.createTextNode(text));
     a.title = text;
-    a.className = "radius_3"
-    //a.href = "http://www.goear.com/plimiter.php?f=" + gd_getSongId();
-    a.href = "http://www.goear.com/action/sound/get/" + gd_getSongId();
-    a.setAttribute("style", "background-position:0px -12px;");
+
+    a.className = 'radius_3'
+    a.href = 'http://www.goear.com/action/sound/get/' + gd_getSongId();
+    a.setAttribute('style', 'background-position:0px -12px;');
 
     return a;
 }
 
 /**
  * Returns the song id. It uses the current Url
- * to get it.
+ * to find it.
  *
  * @return string
  */

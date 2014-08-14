@@ -1,0 +1,14 @@
+{
+  "goear_downloader_title": {
+    "message": "Goear.com Download Extension",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "goear_downloader_description": {
+    "message": "Adds a custom button that allows you to download songs from the goear.com website",
+    "description": "The description of the application, displayed in the web store."
+  },
+  "goear_downloader_anchor_text": {
+    "message": "Download Song",
+    "description": "The text of the custom download button"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "goear_downloader_title": {
+    "message": "Extension para descargar musica de Goear.com",
+    "description": "El titulo de la extension en la tienda de chrome"
+  },
+  "goear_downloader_description": {
+    "message": "Agrega un botón que permite descargar canciones de la página de goear.com",
+    "description": "La descripción de la extension en la tienda de chrome"
+  },
+  "goear_downloader_anchor_text": {
+    "message": "Descargar Canción (Mp3)",
+    "description": "El texto del link"
+  }
+}

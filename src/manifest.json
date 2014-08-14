@@ -1,8 +1,10 @@
 {
-  "name": "Goear.com Downloader",
+  "name": "__MSG_goear_downloader_title__",
+  "short_name": "GoearDown",
+  "description": "__MSG_goear_downloader_description__",
+  "default_locale": "en",
   "manifest_version": 2,
-  "version": "0.2.0",
-  "description": "Adds a download button when playing mp3 files on goear.com",
+  "version": "0.3.0",
   "permissions": [
     "*://*.goear.com/listen/*"
   ],
