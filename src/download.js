@@ -55,9 +55,9 @@ function gd_createLink() {
     a.appendChild(document.createTextNode(text));
     a.title = text;
 
-    a.className = 'radius_3'
+    a.className = 'btn clear pict'
     a.href = 'http://www.goear.com/action/sound/get/' + gd_getSongId();
-    a.setAttribute('style', 'background-position:0px -12px;');
+    a.setAttribute('style', 'background-position:8px -16px;');
 
     return a;
 }
@@ -77,7 +77,10 @@ function gd_getSongId() {
 /**
  * Spin that wheel!
  */
-var actionUl = document.getElementById('actions');
-if (actionUl != null && actionUl.value != '') {
-    gd_addElementToList(actionUl)
+var actionUl = document.getElementsByClassName('actions');
+if (actionUl.length > 0) {
+    for (var i = 0; i < actionUl.length; i++) {
+        console.log(actionUl[i]);
+        gd_addElementToList(actionUl[i]);
+    }
 }
