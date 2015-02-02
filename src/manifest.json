@@ -13,7 +13,7 @@
     "128" : "logo-128.png"
   },
   "content_scripts": [{
-      "matches": ["*://*.goear.com/listen/*"],
+      "matches": ["*://*.goear.com/listen/*", "*://*.goear.com/search/*"],
       "js" : ["download.js"]
     }]
 }
